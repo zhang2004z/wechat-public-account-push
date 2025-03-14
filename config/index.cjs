@@ -44,7 +44,7 @@ const USER_CONFIG = {
   
   TIAN_API: {
     // 天行API KEY，如果使用天行API则需要填写此项
-    key: '',
+    key: '274947d733464108f31c3cac9867d1b4',
     
     /** 天行API相关，需要config中配置 TIAN_API_KEY  */
     // 早安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
@@ -127,7 +127,7 @@ const USER_CONFIG = {
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       // 使用其他通道时，请严格按照各个通道的教程进行填写
       id: 'oyZ096gQ6mVF6-idoHsrb2xKrBC8',
-      useTemplateId: 'y1LDleOcTQtZVqaUjdmkTBGP8CP7bQlK9RrMn-brhnw'，
+      useTemplateId: 'y1LDleOcTQtZVqaUjdmkTBGP8CP7bQlK9RrMn-brhnw',
     }
     // 你可以不断按格式往下增加
     // ...
