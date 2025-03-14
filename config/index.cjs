@@ -69,7 +69,7 @@ const USER_CONFIG = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: '老婆0',
+      name: '宝宝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oyZ096kZRNp5k5jj6DozU2krPPOU',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
@@ -193,12 +193,7 @@ const USER_CONFIG = {
     { keyword: 'marry_day', date: '2022-09-09' },
     // 退伍日
     { keyword: 'ex_day', date: '2022-09-10' }
-    // 你可以不断按格式往下增加
-    // ...
   ],
-  
-  // 默认的课表配置
-  COURSE_SCHEDULE: null,
 
   /** 插槽 */
 
@@ -218,10 +213,5 @@ const USER_CONFIG = {
         '遇见你，就好像捡到了100斤的运气'
       ],
     }
-    // 你可以不断按格式往下增加
-    // ...
-  ],
-}
 
 module.exports = USER_CONFIG
-
