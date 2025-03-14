@@ -71,10 +71,8 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '老婆0',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      // 使用其他通道时，请严格按照各个通道的教程进行填写
       id: 'oyZ096kZRNp5k5jj6DozU2krPPOU',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      // 使用其他通道时，请填写 config/template-config.cjs 中某个想要使用的模板的id
       useTemplateId: 'aMTlx-qC16bRVyQC_WkYkPNsgBQQcBrjDgevltWLlsU',
       // 所在省份或城市，也可以不填
       province: '北京市',
@@ -88,19 +86,12 @@ const USER_CONFIG = {
       openUrl: '',
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '老婆', year: '1996', date: '09-09',
-        },
-        {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
-        },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
+          type: '生日', name: '宝宝', year: '2004', date: '11-15',
         },
         {
-          type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+          type: '节日', name: '纪念日', year: '2025', date: '02-15',
         }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
@@ -113,47 +104,9 @@ const USER_CONFIG = {
         { keyword: 'ex_day', date: '2022-09-10' }
       ],
 
-      },
+    
     },
-    {
-      name: '小宝贝',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆2',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆3',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    }
+    
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -174,6 +127,7 @@ const USER_CONFIG = {
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       // 使用其他通道时，请严格按照各个通道的教程进行填写
       id: 'oyZ096gQ6mVF6-idoHsrb2xKrBC8',
+      useTemplateId: 'y1LDleOcTQtZVqaUjdmkTBGP8CP7bQlK9RrMn-brhnw'，
     }
     // 你可以不断按格式往下增加
     // ...
@@ -218,17 +172,7 @@ const USER_CONFIG = {
    * 删除isShowAge属性，也会不展示岁数
    * --- 是否展示周岁信息结束 ---
    */
-  FESTIVALS: [
-
-    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {
-      type: '生日', name: '宝宝', year: '2004', date: '11-15', isShowAge: true,
-    },
-
-    // 你可以不断按格式往下增加
-    // ...
-  ],
-
+  
   /**
    * 限制重要节日的展示条目, 需要填写数字;
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
